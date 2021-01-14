@@ -14,7 +14,7 @@ export default (() => {
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Components.Style />
-		<Section padding="470px 0 470px 0" background="--color-primary">
+		<Section padding="870px 0 870px 0" background="--color-primary">
 			<Components.Bird />
 		</Section>
 		<Link
