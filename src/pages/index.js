@@ -2,7 +2,7 @@ import React from "react";
 import theme from "theme";
 import { Theme, Link } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Section } from "@quarkly/components";
+import { Section, Override } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
@@ -16,6 +16,10 @@ export default (() => {
 		<Components.Style />
 		<Section padding="870px 0 870px 0" background="--color-primary">
 			<Components.Bird />
+		</Section>
+		<Section padding="870px 0 870px 0" background="--color-primary">
+			<Override slot="SectionContent" height="auto" />
+			<Components.Bird2 />
 		</Section>
 		<Link
 			font={"--capture"}
