@@ -2,8 +2,10 @@ import React from "react";
 import theme from "theme";
 import { Theme, Link } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
+import { GlobalQuarklyPageStyles } from "global-page-styles";
 export default (() => {
 	return <Theme theme={theme}>
+		<GlobalQuarklyPageStyles pageUrl={"404"} />
 		<Helmet>
 			<title>
 				Quarkly export
